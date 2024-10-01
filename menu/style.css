@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mitr', sans-serif;
+}
+
+body {
+  background: url(../img/bg/menu\ bg1.png);
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* navbar start */
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+  padding-right: 100px;
+}
+
+#navbar h2 {
+  color: white;
+  letter-spacing: 3px;
+}
+
+#navbar .navbar-nav {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  text-align: center;
+}
+
+#navbar .navbar-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+}
+
+/* menu content start */
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 5%;
+  align-items: center;
+}
+
+.content .btn {
+  display: flex;
+  justify-content: start;
+  gap: 2rem;
+}
+
+.btn button {
+  background: none;
+  color: #fff;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.carousel-container {
+  /* background-color: aqua; */
+  width: 1400px;
+  overflow: scroll;
+  height: 600px;
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 50px;
+  column-gap: 300px;
+  min-width: 1400px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.264);
+  color: #fff;
+  display: flex;
+  border-radius: 50px;
+  font-weight: 200;
+  text-align: left;
+  cursor: pointer;
+}
+
+.card div {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100px;
+}
+
+.card .title {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.card p {
+  font-size: 0.75rem;
+}
+
+.card .price {
+  font-size: 1.1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button:enabled {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 1600px) and (min-width: 1200px) {
+  html {
+    font-size: 80%;
+  }
+
+  .carousel-container {
+    width: 1200px;
+    height: 450px;
+  }
+
+  #menu-nasgor {
+    margin-right: 200px;
+  }
+
+  .menu {
+    row-gap: 30px;
+    column-gap: 250px;
+    min-width: 1200px;
+  }
+
+  .menu img {
+    width: 35%;
+    aspect-ratio: 4/3;
+  }
+}

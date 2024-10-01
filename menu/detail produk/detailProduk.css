@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mitr', sans-serif;
+}
+
+body {
+  background: url(/img/bg//menu\ -\ detail\ produk.png);
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* navbar start */
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+  padding-right: 100px;
+}
+
+#navbar h2 {
+  color: white;
+  letter-spacing: 3px;
+}
+
+#navbar .navbar-nav {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  text-align: center;
+}
+
+#navbar .navbar-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+}
+
+/* menu content start */
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-top: 100px;
+  align-items: center;
+}
+
+.content > h1 {
+  display: flex;
+  justify-content: start;
+  gap: 2rem;
+  /* opacity: 0; */
+  color: #fff;
+  letter-spacing: 5px;
+}
+
+/* detail Produk */
+
+.detailProduk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.detailProduk a {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.detailProduk a i:hover {
+  color: #ffffff;
+  transition: 0.2s;
+}
+
+.card {
+  max-width: 1265px;
+  background-color: rgba(255, 255, 255, 0.282);
+  border-radius: 50px;
+  display: flex;
+}
+
+.card div {
+  padding: 30px;
+  min-width: min-content;
+  display: flex;
+  flex-direction: column;
+  text-wrap: wrap;
+  justify-content: space-between;
+  color: #fff;
+  font-weight: 200;
+}
+
+.card div .title {
+  font-size: 2.8rem;
+}
+
+.card div p {
+  font-size: 1.14rem;
+}
+
+.card div .price {
+  font-size: 1.7rem;
+}
+
+/* footer */
+
+footer {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+footer .footer {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.282);
+  min-width: 1265px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: #fff;
+  justify-content: center;
+  gap: 10rem;
+  text-wrap: wrap;
+}
+
+a {
+  color: #fff;
+}
+
+.halalIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  justify-content: center;
+}
+
+.addres {
+  display: flex;
+  font-weight: 200;
+  font-size: 1rem;
+  gap: 10px;
+  align-items: center;
+}
+
+@media (max-width: 1600px) and (min-width: 1200px) {
+  html {
+    font-size: 75%;
+  }
+
+  .card {
+    max-width: 985px;
+  }
+
+  .card img {
+    aspect-ratio: 3/2;
+    width: 410px;
+  }
+
+  footer .footer {
+    min-width: 985px;
+  }
+}
